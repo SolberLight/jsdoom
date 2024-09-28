@@ -25,6 +25,15 @@ body {
   margin: 0;
 }
 
+.container {
+  height: 100%
+}
+
+.dosbox-canvas {
+    height: 100%;
+    width: auto;
+}
+
 .dosbox-container > .dosbox-overlay {
   background: url(./assets/img/overlay.png) center no-repeat;
   background-size: 100%;
