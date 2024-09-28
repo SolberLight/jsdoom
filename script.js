@@ -307,11 +307,13 @@
           return function(data) {
             var bytes;
             bytes = _this._toArray(data);
-            if (_this._mountZip(bytes)) {
+            return options.success();
+            
+            /*if (_this._mountZip(bytes)) {
               return options.success();
             } else {
-              return typeof console !== "undefined" && console !== null ? typeof console.error === "function" ? console.error('Unable to mount', url) : void 0 : void 0;
-            }
+              return typeof console !== "undefined" && console !== null ? typeof console.error === "function" ? console.error('Unable to mount', url, ) : void 0 : void 0;
+            }*/
           };
         })(this),
         progress: options.progress
