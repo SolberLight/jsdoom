@@ -368,6 +368,8 @@
     }
 
     UI.prototype.onStart = function(fun) {
+      fun();
+      return _this.overlay.hide();
       return this.start.click((function(_this) {
         return function() {
           fun();
